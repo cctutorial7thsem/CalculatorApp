@@ -20,10 +20,13 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.get('/', function(req, res) {
     res.render('page/index');
 });
+app.get('/home', function(req, res) {
+  res.render('page/home');
+});
 
 
 
 app.listen(80, function () {
-  console.log('App listening on port 80');
+  console.log('App listening on port 3000!');
 });
 
